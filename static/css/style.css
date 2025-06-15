@@ -1,0 +1,103 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    overflow: hidden;
+    /* biar bisa scroll secara vertikal */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE dan Edge lama */
+}
+
+html,
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#scroll-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background: #56DFCF;
+    /* warna ungu indigo Tailwind */
+    z-index: 9999;
+    transition: width 0.25s ease;
+}
+
+.main-content-bg {
+    background-color: #f7e1b5;
+}
+
+.school-card-bg {
+    background-color: #a0c4ff;
+}
+
+.everyday-card-bg {
+    background-color: #ffb572;
+}
+
+.text-swirlzy {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+}
+
+.text-sweet {
+    font-size: 7rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 9999px;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+}
+
+.top-picks-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}

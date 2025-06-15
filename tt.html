@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swirlzy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            /* Background slightly off-white */
+        }
+
+        .header-bg {
+            background-color: #fbf8f0;
+            /* Light cream for header area */
+        }
+
+        .main-content-bg {
+            background-color: #f7e1b5;
+            /* Light orange/peach for main content area */
+        }
+
+        .school-card-bg {
+            background-color: #a0c4ff;
+            /* Light blue for school card */
+        }
+
+        .everyday-card-bg {
+            background-color: #ffb572;
+            /* Darker orange for everyday card */
+        }
+
+        .text-swirlzy {
+            font-size: 8rem;
+            /* Large font size for SWIRLZY */
+            font-weight: 900;
+            line-height: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0.4);
+            /* Semi-transparent white */
+            z-index: 1;
+        }
+
+        /* Custom font size for "SWEE EET !" */
+        .text-sweet {
+            font-size: 7rem;
+            /* Adjust as needed */
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cart-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            /* Dark background for cart */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            /* Fully rounded */
+            position: relative;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff0000;
+            /* Red dot for count */
+            color: #fff;
+            border-radius: 9999px;
+            padding: 2px 6px;
+            font-size: 0.75rem;
+        }
+
+        .top-picks-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f5f6ef] text-gray-800">
+    <!-- Navbar -->
+
+    
+
+    <!-- Top Picks -->
+    <div class="mt-10 px-6">
+        <h2 class="text-2xl font-bold mb-4">TOP-5 PICKS</h2>
+        <div class="space-y-4">
+            <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-yellow-300 rounded-full"></div>
+                    <div>
+                        <h4 class="font-bold">Honey Bun</h4>
+                        <p class="text-sm">Fluffy bun with sweet honey glaze</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span>$4.99 each</span>
+                    <button class="bg-green-900 text-white rounded-full w-8 h-8 font-bold">+</button>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between bg-white p-4 rounded-xl shadow">
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-green-300 rounded-full"></div>
+                    <div>
+                        <h4 class="font-bold">Melon Buns</h4>
+                        <p class="text-sm">Light bun with smooth melon filling</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span>$5.50 each</span>
+                    <button class="bg-green-900 text-white rounded-full w-8 h-8 font-bold">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<

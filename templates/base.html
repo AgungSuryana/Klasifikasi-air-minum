@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Klasifikasi Air{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar"></div>
+
+    {% include 'components/navbar.html' %}
+    <div class="flex flex-grow">
+
+        <main class="flex-grow p-8 overflow-auto">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    {% block scripts %}
+    <script src="{{ url_for('static', filename='js/prediksi.js') }}"></script>
+    {% endblock %}
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            document.getElementById('scroll-bar').style.width = scrollPercent + "%";
+        });
+    </script>
+
+</body>
+
+</html>

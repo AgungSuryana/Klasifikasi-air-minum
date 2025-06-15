@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Klasifikasi Air Minum{% endblock %}
+
+{% block content %}
+<!-- Alert box -->
+<div id="message-box" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6"
+    role="alert">
+    <strong class="font-bold">Error!</strong>
+    <span class="block sm:inline" id="message-text"></span>
+</div>
+
+<!-- Form Komponen -->
+{% include 'components/form_prediksi.html' %}
+
+<!-- Konten Confusion Matrix -->
+{% endblock %}
