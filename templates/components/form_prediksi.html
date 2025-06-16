@@ -1,20 +1,20 @@
 <!-- Main Content Area -->
-<main class="mt-10 px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<main class=" rounded-3xl bg-[#5394b9] p-16 px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
     <section
-        class="lg:col-span-2 bg-white main-content-bg rounded-2xl p-8 relative overflow-hidden shadow-md min-h-[650px] flex flex-col justify-between items-start w-full">
-        <form id="prediction-form" class="space-y-6 w-full flex flex-col justify-between h-full">
+        class="lg:col-span-2 bg-[#5394b9] main-content-bg rounded-2xl p-8 relative overflow-hidden min-h-[650px] flex flex-col justify-between items-start w-full">
+        <form id="prediction-form" class=" text-white space-y-6 w-full flex flex-col justify-between h-full">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                 <!-- Kolom 1 -->
                 <div>
                     <div class="form-group">
-                        <label for="ph" class="block text-gray-700 text-md font-semibold mb-2">pH:</label>
+                        <label for="ph" class="blocktext-white text-lg font-semibold mb-2">pH:</label>
                         <input type="number" step="any" id="ph" name="ph" required
                             placeholder="Masukkan nilai pH (0-14)"
                             class="text-lg shadow-sm appearance-none border border-gray-300 rounded-lg w-full py-4 px-4 text-gray-800 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-150" />
                     </div>
 
                     <div class="form-group">
-                        <label for="Hardness" class="block text-gray-700 text-md font-semibold mb-2">Kekerasan
+                        <label for="Hardness" class="blocktext-white text-lg font-semibold mb-2">Kekerasan
                             (Hardness) mg/L:</label>
                         <input type="number" step="any" id="Hardness" name="Hardness" required
                             placeholder="Masukkan kekerasan air"
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Solids" class="block text-gray-700 text-md font-semibold mb-2">Total Padatan
+                        <label for="Solids" class="blocktext-white text-lg font-semibold mb-2">Total Padatan
                             Terlarut (Solids) mg/L:</label>
                         <input type="number" step="any" id="Solids" name="Solids" required
                             placeholder="Masukkan total padatan terlarut"
@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Chloramines" class="block text-gray-700 text-md font-semibold mb-2">Kloramin
+                        <label for="Chloramines" class="blocktext-white text-lg font-semibold mb-2">Kloramin
                             (Chloramines) mg/L:</label>
                         <input type="number" step="any" id="Chloramines" name="Chloramines" required
                             placeholder="Masukkan konsentrasi kloramin"
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Sulfate" class="block text-gray-700 text-md font-semibold mb-2">Sulfat (Sulfate)
+                        <label for="Sulfate" class="blocktext-white text-lg font-semibold mb-2">Sulfat (Sulfate)
                             mg/L:</label>
                         <input type="number" step="any" id="Sulfate" name="Sulfate" required
                             placeholder="Masukkan konsentrasi sulfat"
@@ -49,7 +49,7 @@
                 <!-- Kolom 2 -->
                 <div>
                     <div class="form-group">
-                        <label for="Conductivity" class="block text-gray-700 text-md font-semibold mb-2">Konduktivitas
+                        <label for="Conductivity" class="blocktext-white text-lg font-semibold mb-2">Konduktivitas
                             (Conductivity) µS/cm:</label>
                         <input type="number" step="any" id="Conductivity" name="Conductivity" required
                             placeholder="Masukkan konduktivitas"
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Organic_carbon" class="block text-gray-700 text-md font-semibold mb-2">Karbon
+                        <label for="Organic_carbon" class="blocktext-white text-lg font-semibold mb-2">Karbon
                             Organik (Organic Carbon) mg/L:</label>
                         <input type="number" step="any" id="Organic_carbon" name="Organic_carbon" required
                             placeholder="Masukkan karbon organik"
@@ -66,7 +66,7 @@
 
                     <div class="form-group">
                         <label for="Trihalomethanes"
-                            class="block text-gray-700 text-md font-semibold mb-2">Trihalometana (Trihalomethanes)
+                            class="blocktext-white text-lg font-semibold mb-2">Trihalometana (Trihalomethanes)
                             µg/L:</label>
                         <input type="number" step="any" id="Trihalomethanes" name="Trihalomethanes" required
                             placeholder="Masukkan trihalometana"
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="Turbidity" class="block text-gray-700 text-md font-semibold mb-2">Kekeruhan
+                        <label for="Turbidity" class="blocktext-white text-lg font-semibold mb-2">Kekeruhan
                             (Turbidity) NTU:</label>
                         <input type="number" step="any" id="Turbidity" name="Turbidity" required
                             placeholder="Masukkan kekeruhan"
@@ -101,7 +101,7 @@
 
             <!-- Hasil Prediksi -->
             <div id="results-area"
-                class="mt-4 p-6 bg-blue-50 rounded-lg border border-blue-200 shadow-inner hidden w-full flex flex-col justify-center items-center">
+                class="mt-4 p-6 shadow-inner hidden w-full flex flex-col justify-center items-center">
                 <div id="prediction-results" class="flex flex-col items-center justify-center space-y-4 text-lg">
                     <!-- JS akan menambahkan hasil prediksi -->
                 </div>

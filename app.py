@@ -81,10 +81,16 @@ def predict():
     X = scaler.transform([features])
     X_selected = selector.transform(X)
 
-    # Prediksi (0 = tidak layak, 1 = layak)
-    prediction = model.predict(X_selected)[0]
+# Prediksi model
+    model_prediction = model.predict(X_selected)[0]
 
-    return jsonify({'prediction': int(prediction), 'reasons': reasons})
+# Override prediksi: jika ada alasan, anggap tidak layak
+    if reasons:
+        prediction = 0
+    else:
+        prediction = int(model_prediction)
+
+    return jsonify({'prediction': prediction, 'reasons': reasons})
 
 if __name__ == '__main__':
     app.run(debug=True)
