@@ -1,0 +1,6 @@
+ph
+Hardness
+Solids
+Chloramines
+Sulfate
+sulfate_conductivity_ratio

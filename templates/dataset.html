@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}Documentation{% endblock %}
+
+{% block content %}
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+        <!-- Seksi Deskripsi -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 border-b pb-2 border-blue-300">📘 Deskripsi Dataset</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Dataset ini berisi informasi mengenai kualitas air minum berdasarkan beberapa parameter kimia dan fisik
+                seperti pH, Hardness, dan Chloramines.
+                Tujuan utamanya adalah untuk mengklasifikasikan apakah air tersebut layak dikonsumsi atau tidak
+                (<code>Potability</code>).
+            </p>
+        </section>
+
+        <!-- Seksi Kolom -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 border-b pb-2 border-blue-300">🧾 Daftar Fitur</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Kolom -->
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">pH</h3>
+                    <p class="text-sm text-gray-600">Tingkat keasaman/alkalinitas air. Rentang ideal: 6.5 - 8.5</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Hardness</h3>
+                    <p class="text-sm text-gray-600">Kandungan kalsium dan magnesium dalam air (mg/L).</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Solids</h3>
+                    <p class="text-sm text-gray-600">Jumlah total padatan terlarut dalam air (ppm).</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Chloramines</h3>
+                    <p class="text-sm text-gray-600">Kandungan disinfektan berbasis klor dalam air.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Sulfate</h3>
+                    <p class="text-sm text-gray-600">Kandungan sulfat dalam mg/L. Tinggi dapat menyebabkan diare.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Conductivity</h3>
+                    <p class="text-sm text-gray-600">Kemampuan air menghantarkan listrik, berbanding lurus dengan jumlah
+                        ion.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Organic Carbon</h3>
+                    <p class="text-sm text-gray-600">Jumlah karbon organik dalam air (mg/L). Indikator pencemaran
+                        organik.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Trihalomethanes</h3>
+                    <p class="text-sm text-gray-600">Senyawa kimia yang terbentuk saat klorin bereaksi dengan bahan
+                        organik.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Turbidity</h3>
+                    <p class="text-sm text-gray-600">Tingkat kekeruhan air.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg text-blue-700">Potability</h3>
+                    <p class="text-sm text-gray-600">Target kelas (0 = tidak layak, 1 = layak).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistik Ringkas -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 border-b pb-2 border-blue-300">📈 Statistik Ringkas</h2>
+            <table class="w-full text-sm text-left text-gray-600 border">
+                <thead class="bg-blue-200 text-gray-800">
+                    <tr>
+                        <th class="p-2">Fitur</th>
+                        <th class="p-2">Min</th>
+                        <th class="p-2">Max</th>
+                        <th class="p-2">Mean</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <tr>
+                        <td class="p-2">pH</td>
+                        <td class="p-2">0.227</td>
+                        <td class="p-2">13.175</td>
+                        <td class="p-2">7.08</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Hardness</td>
+                        <td class="p-2">73.3</td>
+                        <td class="p-2">317.34</td>
+                        <td class="p-2">196.37</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Solids</td>
+                        <td class="p-2">320.94</td>
+                        <td class="p-2">61227.2</td>
+                        <td class="p-2">22014.75</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Chloramines</td>
+                        <td class="p-2">0.35</td>
+                        <td class="p-2">13.127</td>
+                        <td class="p-2">4.63</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Sulfate</td>
+                        <td class="p-2">129.0</td>
+                        <td class="p-2">481.03</td>
+                        <td class="p-2">332.68</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Conductivity</td>
+                        <td class="p-2">181.48</td>
+                        <td class="p-2">753.34</td>
+                        <td class="p-2">426.21</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Organic Carbon</td>
+                        <td class="p-2">2.2</td>
+                        <td class="p-2">28.3</td>
+                        <td class="p-2">14.29</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Trihalomethanes</td>
+                        <td class="p-2">0.74</td>
+                        <td class="p-2">124.0</td>
+                        <td class="p-2">66.4</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Turbidity</td>
+                        <td class="p-2">1.45</td>
+                        <td class="p-2">6.74</td>
+                        <td class="p-2">3.96</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+
+{% endblock %}
